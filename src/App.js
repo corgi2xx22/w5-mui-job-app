@@ -35,8 +35,9 @@ export default function App() {
     <ThemeProvider theme={appliedTheme} sx={{mt:5} }>
     <Paper>
       <CssBaseline />
+     
       <NavBar />
-      <IconButton
+       <IconButton
             edge="end"
             color="inherit"
             aria-label="mode"
@@ -48,6 +49,7 @@ export default function App() {
              {!theme ? "Bright" : "Dark"}{" "}
             {!theme ? "Mode" : "Mode"} 
           </Typography>
+      
       <Container maxWidth="lg">
         <JobList jobs={jobs} />
       </Container>
